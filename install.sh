@@ -23,6 +23,6 @@ apt-get -q update && apt-get install -qy \
 npm install -g babel@5
 
 cd /var/tmp/
-git clone https://github.com/oyvinmar/airsonos
+git clone https://github.com/bietiekay/airsonos
 cd airsonos
 npm install -g --unsafe-perm
