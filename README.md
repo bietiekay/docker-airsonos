@@ -1,5 +1,5 @@
 # Summary
-This is a Docker container for AirSonos.
+This is a Docker container for AirSonos extended with the feature of giving device/sonos device ips instead of using mdns to find them on the network.
 
 AirSonos exposes Sonos as an AirPlay endpoint.  To learn more about AirSonos, [read the author's blog about it](https://medium.com/@stephencwan/hacking-airplay-into-sonos-93a41a1fcfbb).
 
@@ -11,7 +11,7 @@ The first run will pull the container image down to your local machine.
 
 ``` bash
 sudo docker run -d --restart=always --net="host" --name="airsonos" \
-  -p 5000-5050:5000-5050/tcp justintime/airsonos
+  -e devices="ip1,ip2" -p 5000-5050:5000-5050/tcp justintime/airsonos
 ```
 
 ## Notes on running the container
