@@ -6,4 +6,5 @@ sv start avahi || exit 1
 # Wait some more, because we have to
 sleep 5
 
-exec /sbin/setuser nobody airsonos "--devices 192.168.178.129,192.168.178.120,192.168.178.102,192.168.178.46,192.168.178.106,192.168.178.41,192.168.178.118,192.168.178.130,192.168.178.107"
+#exec /sbin/setuser nobody airsonos --devices 192.168.178.129,192.168.178.120,192.168.178.102,192.168.178.46,192.168.178.106,192.168.178.41,192.168.178.118,192.168.178.130,192.168.178.107
+exec /sbin/setuser nobody airsonos --devices $devices
